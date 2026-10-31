@@ -1,2 +1,8 @@
-document.querySelector('#anoAtual').textContent = new Date().getFullYear();
-document.querySelector('#ultimaModificacao').textContent = `Última modificação: ${document.lastModified}`;
+const cursos = [
+    { subject: 'CSE', number: 110, completed: true, credits: 2 },
+    { subject: 'WDD', number: 130, completed: true, credits: 2 },
+    { subject: 'CSE', number: 111, completed: false, credits: 2 },
+    { subject: 'CSE', number: 210, completed: false, credits: 2 },
+    { subject: 'WDD', number: 131, completed: true, credits: 2 },
+    { subject: 'WDD', number: 231, completed: false, credits: 2 }
+];
