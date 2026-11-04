@@ -1,33 +1,32 @@
 @media screen and (min-width:640px) {
     #menu {
-        display: none
+        display: none;
     }
 
-    nav {
-        display: block;
+    #navegacao {
+        display: flex;
+        justify-content: space-around;
         position: static;
-        width: auto
     }
 
-    nav ul {
-        display: flex
+    #navegacao a {
+        display: block;
+        flex: 1 1 100%;
+        text-align: center;
     }
 
     main {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 1rem
+        gap: 1rem;
     }
 
     main h1 {
-        grid-column: 1/3
-    }
-
-    main section:last-child {
-        grid-column: 1/3
+        grid-column: 1/3;
     }
 
     #cursos {
-        grid-template-columns: repeat(3, 1fr)
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 }

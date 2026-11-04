@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD231 - Home - Victor Carrera</title>
-    <meta name="description"
-        content="Página inicial WDD231 de Victor Carrera, projetos de desenvolvimento web, certificados e cursos BYU Idaho.">
+    <meta name="description" content="Página inicial WDD231 de Victor Carrera, projetos de desenvolvimento web">
     <meta name="author" content="Victor Carrera">
+    <link rel="icon" href="favicon.ico.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -21,42 +21,37 @@
 
 <body>
     <header>
-        <img src="imagens/logo.svg" alt="Logo WDD231" width="40" height="40">
+        <img src="imagens/logo.svg" alt="Logo Victor Carrera">
         <span>Victor Carrera</span>
-        <button id="menu" aria-label="Abrir navegação">☰</button>
-        <nav id="animateme">
-            <ul>
-                <li><a href="#">Página Inicial</a></li>
-                <li><a href="#">Projeto da Câmara</a></li>
-                <li><a href="#">Projeto Final</a></li>
-                <li><a href="https://github.com/carrera-byu" target="_blank">GitHub</a></li>
-            </ul>
-        </nav>
+        <button id="menu" aria-label="Abrir menu">&#9776;</button>
     </header>
+    <nav id="navegacao">
+        <a href="index.html" class="ativo">Home</a>
+        <a href="#">Chamber</a>
+        <a href="#">Final</a>
+        <a href="https://github.com/victorcarrera" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/victorcarrera" target="_blank">LinkedIn</a>
+    </nav>
     <main>
-        <h1>Página Inicial</h1>
-        <section>
+        <h1>Home</h1>
+        <section class="cartao">
             <h2>Sobre Mim</h2>
-            <p>Sou Victor Carrera, estudante de Desenvolvimento Web na BYU Idaho, morando no Brasil.</p>
+            <p>Olá! Meu nome é Victor Carrera. Esta é minha página inicial para o curso WDD231 - Desenvolvimento Web
+                Frontend.</p>
         </section>
-        <section>
-            <h2>Foto do Aluno</h2>
-            <img src="imagens/victor.webp" alt="Foto de Victor Carrera" width="300" height="297">
-        </section>
-        <section>
-            <h2>Certificados</h2>
-            <div class="filtros">
-                <button id="todos">Todos Cursos</button>
-                <button id="wdd">WDD</button>
-                <button id="cse">CSE</button>
+        <section class="cartao">
+            <h2>Trabalhos do Curso</h2>
+            <div id="filtros">
+                <button>Todos</button>
+                <button>CSE</button>
+                <button>WDD</button>
             </div>
             <div id="cursos"></div>
-            <p id="creditos">Total de Créditos: 0</p>
         </section>
     </main>
     <footer>
-        <p>&copy; <span id="anoAtual"></span> Victor Carrera - Brasil</p>
-        <p id="ultimaModificacao"></p>
+        <p>&copy; <span id="ano"></span> Victor Carrera | São Paulo, Brasil</p>
+        <p id="ultima-modificacao"></p>
     </footer>
 </body>
 

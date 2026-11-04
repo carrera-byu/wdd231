@@ -12,11 +12,12 @@ body {
 header {
     background: #0a3d62;
     color: #fff;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 24px 1fr 44px;
     align-items: center;
+    gap: 0.5rem;
     padding: 1rem;
-    position: relative
+    position: relative;
 }
 
 header span {
@@ -36,9 +37,6 @@ header span {
 nav {
     display: none;
     width: 100%;
-    position: absolute;
-    top: 100%;
-    left: 0;
     background: #0a3d62
 }
 
@@ -95,11 +93,13 @@ section {
     background: #ddd
 }
 
+#filtros,
 .filtros {
     display: flex;
     gap: .5rem
 }
 
+#filtros button,
 .filtros button {
     padding: .5rem 1rem;
     cursor: pointer
@@ -114,8 +114,8 @@ footer {
 }
 
 section img {
-  width: 100%;
-  height: auto;
-  max-width: 300px;
-  display: block;
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    display: block;
 }
