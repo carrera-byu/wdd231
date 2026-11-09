@@ -1,16 +1,16 @@
 [
     {
-        "nome": "Padaria Pão Dourado",
-        "endereco": "Rua Augusta, 123 - Consolação, São Paulo - SP",
+        "nome": "Padaria Pao Dourado",
+        "endereco": "Rua Augusta, 123 - Consolacao, Sao Paulo - SP",
         "telefone": "(11) 3333-1111",
         "website": "https://example.com/paodourado",
         "imagem": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&q=80",
         "nivel": 3,
-        "descricao": "Padaria artesanal com pães fermentados naturalmente."
+        "descricao": "Padaria artesanal com paes fermentados naturalmente."
     },
     {
         "nome": "Tech Solutions SP",
-        "endereco": "Av. Paulista, 1000 - Bela Vista, São Paulo - SP",
+        "endereco": "Av. Paulista, 1000 - Bela Vista, Sao Paulo - SP",
         "telefone": "(11) 3444-2222",
         "website": "https://example.com/techsp",
         "imagem": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80",
@@ -19,25 +19,25 @@
     },
     {
         "nome": "Floricultura Flor Viva",
-        "endereco": "Rua das Flores, 45 - Moema, São Paulo - SP",
+        "endereco": "Rua das Flores, 45 - Moema, Sao Paulo - SP",
         "telefone": "(11) 3555-3333",
         "website": "https://example.com/florviva",
         "imagem": "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=600&q=80",
         "nivel": 2,
-        "descricao": "Arranjos e buquês para eventos e datas comemorativas."
+        "descricao": "Arranjos e buques para eventos e datas comemorativas."
     },
     {
-        "nome": "Academia Força Total",
-        "endereco": "Rua Vergueiro, 500 - Liberdade, São Paulo - SP",
+        "nome": "Academia Forca Total",
+        "endereco": "Rua Vergueiro, 500 - Liberdade, Sao Paulo - SP",
         "telefone": "(11) 3666-4444",
         "website": "https://example.com/forcatotal",
         "imagem": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&q=80",
         "nivel": 2,
-        "descricao": "Musculação, aulas coletivas e personal trainer."
+        "descricao": "Musculacao, aulas coletivas e personal trainer."
     },
     {
         "nome": "Restaurante Sabor da Casa",
-        "endereco": "Rua 13 de Maio, 200 - Bixiga, São Paulo - SP",
+        "endereco": "Rua 13 de Maio, 200 - Bixiga, Sao Paulo - SP",
         "telefone": "(11) 3777-5555",
         "website": "https://example.com/sabordacasa",
         "imagem": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80",
@@ -46,7 +46,7 @@
     },
     {
         "nome": "Papelaria Criativa",
-        "endereco": "Av. Angélica, 800 - Higienópolis, São Paulo - SP",
+        "endereco": "Av. Angelica, 800 - Higienopolis, Sao Paulo - SP",
         "telefone": "(11) 3888-6666",
         "website": "https://example.com/papelaria",
         "imagem": "https://images.unsplash.com/photo-1456735190827-d1262f71b8a3?w=600&q=80",
@@ -55,11 +55,11 @@
     },
     {
         "nome": "Pet Shop Amigo Fiel",
-        "endereco": "Rua dos Pinheiros, 300 - Pinheiros, São Paulo - SP",
+        "endereco": "Rua dos Pinheiros, 300 - Pinheiros, Sao Paulo - SP",
         "telefone": "(11) 3999-7777",
         "website": "https://example.com/amigofiel",
         "imagem": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=600&q=80",
         "nivel": 2,
-        "descricao": "Banho, tosa, ração e acessórios para pets."
+        "descricao": "Banho, tosa, racao e acessorios para pets."
     }
 ]
