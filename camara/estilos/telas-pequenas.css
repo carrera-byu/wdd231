@@ -179,3 +179,10 @@ footer {
     font-size: 14px;
     margin-top: 20px;
 }
+
+.nome-camara {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+    color: white;
+}

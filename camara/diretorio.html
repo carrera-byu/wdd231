@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" prefix="og: https://ogp.me/ns#">
 
 <head>
     <meta charset="UTF-8">
@@ -17,7 +17,7 @@
         href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%230B3D2E'/%3E%3Ctext x='50' y='68' font-size='48' font-family='Arial' font-weight='bold' fill='%23C9A227' text-anchor='middle'%3ESP%3C/text%3E%3C/svg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos/telas-pequenas.css">
     <link rel="stylesheet" href="estilos/telas-grandes.css">
     <script src="scripts/diretorio.js" defer></script>
@@ -28,7 +28,7 @@
         <div class="header-top">
             <div class="logo-box">SP</div>
             <div>
-                <h1>Câmara de Comércio</h1>
+                <p class="nome-camara">Câmara de Comércio</p>
                 <p>São Paulo</p>
             </div>
         </div>
@@ -40,11 +40,11 @@
         </nav>
     </header>
     <main>
-        <h2>Diretório de Membros</h2>
+        <h1>Diretório de Membros</h1>
         <p>Conheça as empresas que fazem parte da nossa câmara.</p>
         <div class="botoes">
-            <button id="btnGrade" class="ativo">■ Grade</button>
-            <button id="btnLista">≡ Lista</button>
+            <button id="btnGrade" class="ativo" type="button">■ Grade</button>
+            <button id="btnLista" type="button">≡ Lista</button>
         </div>
         <div id="membros"></div>
     </main>
