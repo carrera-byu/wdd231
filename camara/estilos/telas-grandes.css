@@ -1,8 +1,40 @@
 @media (min-width: 800px) {
-    .header-top h1 {
-        font-size: 24px;
+
+    /* HEADER - logo a la izquierda, título, sin hamburguesa */
+    .header-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 1rem;
     }
 
+    .nome-camara {
+        font-size: 1.8rem;
+    }
+
+    /* QUITA EL BOTON HAMBURGUESA EN COMPUTADORA */
+    #menu-btn {
+        display: none;
+    }
+
+    /* MENU EN HORIZONTAL, SIN BOLITAS */
+    nav {
+        margin-top: 14px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    nav a {
+        padding: 8px 16px;
+    }
+
+    /* TARJETAS - 3 EN FILA */
     #membros {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -13,16 +45,24 @@
 
     #membros.lista .card {
         flex-direction: row;
+        align-items: center;
+        text-align: left;
     }
 
     #membros.lista .card img {
         width: 140px;
         height: 140px;
+        margin: 0;
     }
 }
 
 @media (min-width: 500px) and (max-width: 799px) {
     #membros {
         grid-template-columns: 1fr 1fr;
+    }
+
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 }

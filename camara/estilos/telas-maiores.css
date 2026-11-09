@@ -1,0 +1,54 @@
+@media (min-width: 800px) {
+    .header-top {
+        justify-content: space-between;
+    }
+
+    .titulo-site {
+        font-size: 1.8rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navegacao {
+        flex-direction: row !important;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .navegacao a {
+        padding: 8px 16px;
+    }
+
+    #membros {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #membros.lista {
+        grid-template-columns: 1fr;
+    }
+
+    #membros.lista .card {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+    }
+
+    #membros.lista .card img {
+        width: 140px;
+        height: 140px;
+        margin: 0;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 799px) {
+    #membros {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .navegacao {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
