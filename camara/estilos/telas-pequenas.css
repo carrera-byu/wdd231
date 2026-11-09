@@ -1,0 +1,144 @@
+:root {
+    --cor-principal: #0B3D2E;
+    --cor-secundaria: #C9A227;
+    --cor-fundo: #F4F4F4;
+    --cor-texto: #222;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+header {
+    background: var(--cor-principal);
+    color: white;
+}
+
+.logo-titulo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.logo-titulo h1 {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.logo-titulo p {
+    margin: 0;
+}
+
+#menu {
+    margin-left: auto;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+}
+
+nav.aberto {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+    border-top: 1px solid rgba(255, 255, 255, .2);
+}
+
+nav a.ativo,
+nav a:hover {
+    background: var(--cor-secundaria);
+    color: #000;
+}
+
+main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.botoes-visualizacao {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.botoes-visualizacao button {
+    padding: 0.6rem 1.2rem;
+    cursor: pointer;
+    border: 1px solid var(--cor-principal);
+    background: white;
+}
+
+.botoes-visualizacao button.ativo {
+    background: var(--cor-principal);
+    color: white;
+}
+
+/* VISTA GRADE */
+#membros.grade {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+#membros.grade .cartao {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+}
+
+#membros.grade .cartao img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 6px;
+}
+
+
+/* VISTA LISTA */
+#membros.lista {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#membros.lista .cartao {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: white;
+    padding: 0.8rem;
+    border-left: 5px solid var(--cor-secundaria);
+}
+
+#membros.lista .cartao img {
+    display: none;
+}
+
+footer {
+    background: var(--cor-principal);
+    color: white;
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+}

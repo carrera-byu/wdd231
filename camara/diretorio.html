@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diretório de Membros | Câmara de Comércio de São Paulo</title>
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%230B3D2E'/%3E%3Ctext x='50' y='68' font-size='48' font-family='Arial' font-weight='bold' fill='%23C9A227' text-anchor='middle'%3ESP%3C/text%3E%3C/svg%3E">
+    <meta name="description" content="Diretório de membros da Câmara de Comércio de São Paulo.">
+    <meta name="author" content="Câmara de Comércio de São Paulo">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f4f4;
+            color: #222;
+            line-height: 1.5
+        }
+
+        header {
+            background: #0B3D2E;
+            color: white;
+            padding: 16px 20px
+        }
+
+        .header-top {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 14px
+        }
+
+        .logo-box {
+            background: #C9A227;
+            color: #0B3D2E;
+            font-weight: 800;
+            font-size: 28px;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            flex-shrink: 0
+        }
+
+        .header-top h1 {
+            font-size: 24px;
+            line-height: 1.1
+        }
+
+        .header-top p {
+            font-size: 16px;
+            opacity: .9
+        }
+
+        nav {
+            max-width: 1100px;
+            margin: 14px auto 0;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 14px;
+            border-radius: 4px
+        }
+
+        nav a.ativo {
+            background: #C9A227;
+            color: #0B3D2E;
+            font-weight: bold
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 28px 20px 60px
+        }
+
+        main h2 {
+            font-size: 28px;
+            margin-bottom: 10px
+        }
+
+        main>p {
+            font-size: 17px;
+            margin-bottom: 20px
+        }
+
+        .botoes {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 24px
+        }
+
+        .botoes button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: 2px solid #0B3D2E;
+            background: white;
+            color: #0B3D2E;
+            font-weight: bold
+        }
+
+        .botoes button.ativo {
+            background: #0B3D2E;
+            color: white
+        }
+
+        #membros {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px
+        }
+
+        #membros.lista {
+            grid-template-columns: 1fr
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, .08)
+        }
+
+        #membros.lista .card {
+            text-align: left;
+            display: flex;
+            gap: 18px;
+            align-items: flex-start
+        }
+
+        #membros.lista .card img {
+            width: 140px;
+            height: 140px;
+            flex-shrink: 0
+        }
+
+        .card img {
+            width: 100%;
+            max-width: 280px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin: 0 auto 12px;
+            display: block;
+            background: #ddd
+        }
+
+        .card h3 {
+            font-size: 19px;
+            margin-bottom: 6px
+        }
+
+        .card p {
+            margin-bottom: 8px;
+            font-size: 15px
+        }
+
+        .card a {
+            color: #0B3D2E;
+            font-weight: bold
+        }
+
+        .nivel {
+            font-weight: bold
+        }
+
+        footer {
+            background: #0B3D2E;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            margin-top: 20px
+        }
+
+        @media(max-width:800px) {
+            #membros {
+                grid-template-columns: 1fr 1fr
+            }
+
+            #membros.lista .card {
+                flex-direction: column
+            }
+
+            #membros.lista .card img {
+                width: 100%;
+                height: 180px
+            }
+        }
+
+        @media(max-width:500px) {
+            #membros {
+                grid-template-columns: 1fr
+            }
+
+            .header-top h1 {
+                font-size: 20px
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-top">
+            <div class="logo-box">SP</div>
+            <div>
+                <h1>Câmara de Comércio</h1>
+                <p>São Paulo</p>
+            </div>
+        </div>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="diretorio.html" class="ativo">Diretório</a>
+            <a href="junte-se.html">Junte-se</a>
+            <a href="descubra.html">Descubra</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Diretório de Membros</h2>
+        <p>Conheça as empresas que fazem parte da nossa câmara.</p>
+
+        <div class="botoes">
+            <button id="btnGrade" class="ativo">■ Grade</button>
+            <button id="btnLista">≡ Lista</button>
+        </div>
+
+        <div id="membros"></div>
+
+    </main>
+
+    <footer>
+        <p>Câmara de Comércio de São Paulo | Av. Paulista, 1000 - São Paulo - SP</p>
+        <p id="ano"></p>
+    </footer>
+
+    <script>
+        const membros = [
+            { nome: "Padaria Pão Dourado", endereco: "Rua Augusta, 123 - Consolação, São Paulo - SP", telefone: "(11) 3333-1111", website: "https://example.com/paodourado", imagem: "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&q=80", nivel: 3, descricao: "Padaria artesanal com pães fermentados naturalmente." },
+            { nome: "Tech Solutions SP", endereco: "Av. Paulista, 1000 - Bela Vista, São Paulo - SP", telefone: "(11) 3444-2222", website: "https://example.com/techsp", imagem: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80", nivel: 3, descricao: "Desenvolvimento de sites e sistemas para pequenas empresas." },
+            { nome: "Floricultura Flor Viva", endereco: "Rua das Flores, 45 - Moema, São Paulo - SP", telefone: "(11) 3555-3333", website: "https://example.com/florviva", imagem: "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=600&q=80", nivel: 2, descricao: "Arranjos e buquês para eventos e datas comemorativas." },
+            { nome: "Academia Força Total", endereco: "Rua Vergueiro, 500 - Liberdade, São Paulo - SP", telefone: "(11) 3666-4444", website: "https://example.com/forcatotal", imagem: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&q=80", nivel: 2, descricao: "Musculação, aulas coletivas e personal trainer." },
+            { nome: "Restaurante Sabor da Casa", endereco: "Rua 13 de Maio, 200 - Bixiga, São Paulo - SP", telefone: "(11) 3777-5555", website: "https://example.com/sabordacasa", imagem: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80", nivel: 1, descricao: "Comida caseira e marmitas com entrega no centro." },
+            { nome: "Papelaria Criativa", endereco: "Av. Angélica, 800 - Higienópolis, São Paulo - SP", telefone: "(11) 3888-6666", website: "https://example.com/papelaria", imagem: "https://images.unsplash.com/photo-1456735190827-d1262f71b8a3?w=600&q=80", nivel: 1, descricao: "Material escolar, papelaria e presentes personalizados." },
+            { nome: "Pet Shop Amigo Fiel", endereco: "Rua dos Pinheiros, 300 - Pinheiros, São Paulo - SP", telefone: "(11) 3999-7777", website: "https://example.com/amigofiel", imagem: "https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=600&q=80", nivel: 2, descricao: "Banho, tosa, ração e acessórios para pets." }
+        ];
+
+        function getNivel(n) {
+            if (n === 3) return "Ouro";
+            if (n === 2) return "Prata";
+            return "Membro";
+        }
+
+        const container = document.getElementById("membros");
+
+        function mostrar() {
+            container.innerHTML = membros.map(m => `
+    <article class="card">
+      <img src="${m.imagem}" alt="Logo ${m.nome}" loading="lazy">
+      <div>
+        <h3>${m.nome}</h3>
+        <p><span class="nivel">Nível:</span> ${getNivel(m.nivel)}</p>
+        <p>${m.descricao}</p>
+        <p>${m.endereco}</p>
+        <p>${m.telefone}</p>
+        <p><a href="${m.website}" target="_blank">Visitar Site</a></p>
+      </div>
+    </article>
+  `).join("");
+        }
+        mostrar();
+
+        const btnGrade = document.getElementById("btnGrade");
+        const btnLista = document.getElementById("btnLista");
+
+        btnGrade.addEventListener("click", () => {
+            container.classList.remove("lista");
+            btnGrade.classList.add("ativo");
+            btnLista.classList.remove("ativo");
+        });
+        btnLista.addEventListener("click", () => {
+            container.classList.add("lista");
+            btnLista.classList.add("ativo");
+            btnGrade.classList.remove("ativo");
+        });
+
+        document.getElementById("ano").textContent = "© " + new Date().getFullYear() + " Câmara de Comércio de São Paulo";
+    </script>
+
+</body>
+
+</html>

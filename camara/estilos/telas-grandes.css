@@ -1,0 +1,31 @@
+@media (min-width: 768px) {
+    #menu {
+        display: none;
+    }
+
+    nav {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav a {
+        border: none;
+    }
+
+    #membros.grade {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #membros.lista .cartao {
+        grid-template-columns: 2fr 2fr 1fr 1fr;
+        align-items: center;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        padding: 2rem;
+    }
+}
