@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+figure {
+    background: #eee;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+figcaption {
+    text-transform: capitalize;
+}
