@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulos JavaScript</title>
+    <link rel="stylesheet" href="estilos/modulos.css">
+</head>
+
+<body>
+    <h1 id="nomeCurso"></h1>
+
+    <label for="numeroSecao">Seção:</label>
+    <select id="numeroSecao"></select>
+
+    <button id="matricularEstudante">Matricular Estudante</button>
+    <button id="removerEstudante">Remover Estudante</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Seção</th>
+                <th>Sala</th>
+                <th>Matriculados</th>
+                <th>Dias</th>
+                <th>Professor</th>
+            </tr>
+        </thead>
+        <tbody id="secoes"></tbody>
+    </table>
+
+    <script type="module" src="scripts/modulos.mjs"></script>
+</body>
+
+</html>
