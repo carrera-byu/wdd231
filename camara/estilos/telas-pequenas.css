@@ -131,3 +131,20 @@ footer {
     padding: 1rem;
     margin-top: 2rem;
 }
+
+header .site-title {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0;
+    color: white;
+}
+
+main h1 {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 1rem 0;
+    color: #0b3d91;
+}

@@ -5,23 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diretório - Câmara de Comércio</title>
-    <meta name="description" content="Diretório de membros da Câmara de Comércio.">
+    <meta name="description"
+        content="Explore o diretório de membros da Câmara de Comércio e encontre empresas locais, serviços e parceiros da comunidade.">
     <meta name="author" content="Carrera">
+    <meta property="og:title" content="Diretório de Membros | Câmara de Comércio">
+    <meta property="og:description"
+        content="Explore o diretório de membros da Câmara de Comércio e encontre empresas locais, serviços e parceiros da comunidade.">
+    <meta property="og:image" content="https://carrera-byu.github.io/wdd231/camara/imagens/logo.png">
+    <meta property="og:url" content="https://carrera-byu.github.io/wdd231/camara/diretorio.html">
+    <meta property="og:type" content="website">
     <link rel="icon" href="imagens/favicon.png">
-
-    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
-
-    <!-- CSS - TUS 3 ARCHIVOS EN PORTUGUÉS -->
     <link rel="stylesheet" href="estilos/telas-pequenas.css">
     <link rel="stylesheet" href="estilos/telas-maiores.css">
     <link rel="stylesheet" href="estilos/telas-grandes.css">
-
-    <!-- JS -->
     <script src="scripts/navegacao.js" defer></script>
     <script src="scripts/diretorio.js" defer></script>
 </head>
@@ -30,33 +31,28 @@
     <header>
         <img src="imagens/logo.png" alt="Logo Câmara de Comércio" width="60" height="60">
         <div>
-            <h1>Câmara de Comércio</h1>
+            <p class="site-title">Câmara de Comércio</p>
             <p>Diretório de Membros</p>
         </div>
         <button id="menu" aria-label="Abrir menu">☰</button>
     </header>
-
     <nav id="navegacao">
         <a href="index.html">Início</a>
         <a href="descobrir.html">Descobrir</a>
         <a href="diretorio.html" class="active">Diretório</a>
         <a href="junte-se.html">Junte-se</a>
     </nav>
-
     <main>
-        <h2>Diretório de Membros</h2>
-
+        <h1>Diretório de Membros</h1>
         <div class="view-buttons">
             <button id="grid-btn" class="active">⊞ Grade</button>
             <button id="list-btn">☰ Lista</button>
         </div>
-
         <div id="members" class="grid"></div>
     </main>
-
     <footer>
         <p>Câmara de Comércio</p>
-        <p>&copy; <span id="year"></span> |Victor Carrera | WDD 231</p>
+        <p>&copy; <span id="year"></span> | Victor Carrera | WDD 231</p>
         <p id="lastModified"></p>
     </footer>
 </body>
