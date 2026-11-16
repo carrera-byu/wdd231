@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial - Câmara de Comércio</title>
+    <meta name="description"
+        content="Bem-vindo à Câmara de Comércio de São Paulo. Conheça eventos, empresas locais, clima atual e como se associar.">
+    <meta name="author" content="Carrera">
+    <meta property="og:title" content="Página Inicial | Câmara de Comércio">
+    <meta property="og:description"
+        content="Bem-vindo à Câmara de Comércio de São Paulo. Conheça eventos, empresas locais e como se associar.">
+    <meta property="og:image" content="https://carrera-byu.github.io/wdd231/camara/imagens/logo.png">
+    <meta property="og:url" content="https://carrera-byu.github.io/wdd231/camara/index.html">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="imagens/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="estilos/telas-pequenas.css">
+    <link rel="stylesheet" href="estilos/telas-maiores.css">
+    <link rel="stylesheet" href="estilos/telas-grandes.css">
+    <script src="scripts/navegacao.js" defer></script>
+    <script src="scripts/inicio.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="imagens/logo.png" alt="Logo Câmara de Comércio" width="60" height="60">
+        <div>
+            <p class="site-title">Câmara de Comércio</p>
+            <p>Página Inicial</p>
+        </div>
+        <button id="menu" aria-label="Abrir menu">☰</button>
+    </header>
+    <nav id="navegacao">
+        <a href="index.html" class="active">Início</a>
+        <a href="descobrir.html">Descobrir</a>
+        <a href="diretorio.html">Diretório</a>
+        <a href="junte-se.html">Junte-se</a>
+    </nav>
+    <main>
+        <h1>Câmara de Comércio de São Paulo</h1>
+
+        <section class="hero">
+            <img src="imagens/hero.jpg" alt="Vista da cidade de São Paulo">
+            <a href="junte-se.html" class="cta">Junte-se à Câmara</a>
+        </section>
+
+        <section>
+            <h2>Eventos Atuais</h2>
+            <p><strong>Feira de Negócios Locais</strong> - Sábado, 10h - Centro de Convenções</p>
+            <p><strong>Workshop: Marketing Digital</strong> - Quarta-feira, 19h - Online</p>
+        </section>
+
+        <section>
+            <h2>Clima em São Paulo</h2>
+            <p id="clima-atual">Carregando clima...</p>
+            <div id="previsao"></div>
+        </section>
+
+        <section>
+            <h2>Empresas em Destaque</h2>
+            <div id="destaques"></div>
+        </section>
+    </main>
+    <footer>
+        <p>Câmara de Comércio</p>
+        <p>&copy; <span id="year"></span> | Victor Carrera | WDD 231</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
