@@ -13,6 +13,7 @@ async function getMembers() {
   }
 }
 
+
 function displayMembers(members) {
   membersContainer.innerHTML = '';
   members.forEach(member => {

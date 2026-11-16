@@ -3,6 +3,7 @@
         display: none;
     }
 
+
     #navegacao {
         display: flex !important;
         flex-direction: row;
