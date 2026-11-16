@@ -1,65 +1,68 @@
-[
-    {
-        "nome": "Padaria Pao Dourado",
-        "endereco": "Rua Augusta, 123 - Consolacao, Sao Paulo - SP",
-        "telefone": "(11) 3333-1111",
-        "website": "https://example.com/paodourado",
-        "imagem": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&q=80",
-        "nivel": 3,
-        "descricao": "Padaria artesanal com paes fermentados naturalmente."
-    },
-    {
-        "nome": "Tech Solutions SP",
-        "endereco": "Av. Paulista, 1000 - Bela Vista, Sao Paulo - SP",
-        "telefone": "(11) 3444-2222",
-        "website": "https://example.com/techsp",
-        "imagem": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80",
-        "nivel": 3,
-        "descricao": "Desenvolvimento de sites e sistemas para pequenas empresas."
-    },
-    {
-        "nome": "Floricultura Flor Viva",
-        "endereco": "Rua das Flores, 45 - Moema, Sao Paulo - SP",
-        "telefone": "(11) 3555-3333",
-        "website": "https://example.com/florviva",
-        "imagem": "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=600&q=80",
-        "nivel": 2,
-        "descricao": "Arranjos e buques para eventos e datas comemorativas."
-    },
-    {
-        "nome": "Academia Forca Total",
-        "endereco": "Rua Vergueiro, 500 - Liberdade, Sao Paulo - SP",
-        "telefone": "(11) 3666-4444",
-        "website": "https://example.com/forcatotal",
-        "imagem": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&q=80",
-        "nivel": 2,
-        "descricao": "Musculacao, aulas coletivas e personal trainer."
-    },
-    {
-        "nome": "Restaurante Sabor da Casa",
-        "endereco": "Rua 13 de Maio, 200 - Bixiga, Sao Paulo - SP",
-        "telefone": "(11) 3777-5555",
-        "website": "https://example.com/sabordacasa",
-        "imagem": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80",
-        "nivel": 1,
-        "descricao": "Comida caseira e marmitas com entrega no centro."
-    },
-    {
-        "nome": "Papelaria Criativa",
-        "endereco": "Av. Angelica, 800 - Higienopolis, Sao Paulo - SP",
-        "telefone": "(11) 3888-6666",
-        "website": "https://example.com/papelaria",
-        "imagem": "https://images.unsplash.com/photo-1456735190827-d1262f71b8a3?w=600&q=80",
-        "nivel": 1,
-        "descricao": "Material escolar, papelaria e presentes personalizados."
-    },
-    {
-        "nome": "Pet Shop Amigo Fiel",
-        "endereco": "Rua dos Pinheiros, 300 - Pinheiros, Sao Paulo - SP",
-        "telefone": "(11) 3999-7777",
-        "website": "https://example.com/amigofiel",
-        "imagem": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=600&q=80",
-        "nivel": 2,
-        "descricao": "Banho, tosa, racao e acessorios para pets."
-    }
-]
+{
+    "members": [
+        {
+            "name": "Academia Vital Fit",
+            "address": "Rua das Flores, 123 - Moema, São Paulo - SP",
+            "phone": "(11) 95555-0001",
+            "website": "https://example.com/vitalfit",
+            "image": "academia.jpg",
+            "membership": 3
+        },
+        {
+            "name": "Flor & Cia",
+            "address": "Av. Paulista, 500 - Bela Vista, São Paulo - SP",
+            "phone": "(11) 95555-0002",
+            "website": "https://example.com/flor",
+            "image": "flor.jpg",
+            "membership": 2
+        },
+        {
+            "name": "Padaria Pão Dourado",
+            "address": "Rua Augusta, 200 - Consolação, São Paulo - SP",
+            "phone": "(11) 95555-0003",
+            "website": "https://example.com/padaria",
+            "image": "padaria.jpg",
+            "membership": 3
+        },
+        {
+            "name": "Papelaria Criativa",
+            "address": "Rua XV de Novembro, 80 - Centro, São Paulo - SP",
+            "phone": "(11) 95555-0004",
+            "website": "https://example.com/papelaria",
+            "image": "papelaria.jpg",
+            "membership": 1
+        },
+        {
+            "name": "Pet Amigo",
+            "address": "Rua dos Pinheiros, 350 - Pinheiros, São Paulo - SP",
+            "phone": "(11) 95555-0005",
+            "website": "https://example.com/pet",
+            "image": "pet.jpg",
+            "membership": 2
+        },
+        {
+            "name": "Restaurante Sabor Paulista",
+            "address": "Av. Faria Lima, 900 - Itaim Bibi, São Paulo - SP",
+            "phone": "(11) 95555-0006",
+            "website": "https://example.com/restaurante",
+            "image": "restaurante.jpg",
+            "membership": 3
+        },
+        {
+            "name": "Tech Solutions SP",
+            "address": "Av. Brigadeiro Faria Lima, 1200 - Jardim Paulistano, São Paulo - SP",
+            "phone": "(11) 95555-0007",
+            "website": "https://example.com/tech",
+            "image": "tech.jpg",
+            "membership": 3
+        },
+        {
+            "name": "Café Central",
+            "address": "Rua Liberdade, 45 - Liberdade, São Paulo - SP",
+            "phone": "(11) 95555-0008",
+            "website": "https://example.com/cafe",
+            "image": "logo.png",
+            "membership": 1
+        }
+    ]
+}
