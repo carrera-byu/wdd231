@@ -1,40 +1,52 @@
-function getNivel(n) {
-    if (n === 3) return "Ouro";
-    if (n === 2) return "Prata";
-    return "Membro";
+const membersContainer = document.getElementById('members');
+const gridBtn = document.getElementById('grid-btn');
+const listBtn = document.getElementById('list-btn');
+
+async function getMembers() {
+  try {
+    const response = await fetch('dados/membros.json');
+    const data = await response.json();
+    displayMembers(data.members);
+  } catch (error) {
+    console.error('Erro ao carregar membros:', error);
+    membersContainer.innerHTML = '<p>Não foi possível carregar os membros.</p>';
+  }
 }
 
-const container = document.getElementById("membros");
+function displayMembers(members) {
+  membersContainer.innerHTML = '';
+  members.forEach(member => {
+    const card = document.createElement('section');
+    card.classList.add('member-card');
+    let levelText = 'Membro';
+    if (member.membership === 3) levelText = 'Ouro';
+    if (member.membership === 2) levelText = 'Prata';
+    if (member.membership === 1) levelText = 'Bronze';
 
-async function carregarMembros() {
-    const resposta = await fetch("dados/membros.json");
-    const membros = await resposta.json();
-    container.innerHTML = membros.map(m => `
-    <article class="card">
-      <img src="${m.imagem}" alt="Logo ${m.nome}" loading="lazy">
-      <div>
-        <h3>${m.nome}</h3>
-        <p><span class="nivel">Nivel:</span> ${getNivel(m.nivel)}</p>
-        <p>${m.descricao}</p>
-        <p>${m.endereco}</p>
-        <p>${m.telefone}</p>
-        <p><a href="${m.website}" target="_blank">Visitar Site</a></p>
-      </div>
-    </article>
-  `).join("");
+    card.innerHTML = `
+      <img src="imagens/${member.image}" alt="Logo ${member.name}" width="200" height="120" loading="lazy">
+      <h3>${member.name}</h3>
+      <p>${member.address}</p>
+      <p>${member.phone}</p>
+      <a href="${member.website}" target="_blank">Visitar site</a>
+      <p class="level">Nível: ${levelText}</p>
+    `;
+    membersContainer.appendChild(card);
+  });
 }
-carregarMembros();
 
-const btnGrade = document.getElementById("btnGrade");
-const btnLista = document.getElementById("btnLista");
-btnGrade.addEventListener("click", () => {
-    container.classList.remove("lista");
-    btnGrade.classList.add("ativo");
-    btnLista.classList.remove("ativo");
+gridBtn.addEventListener('click', () => {
+  membersContainer.classList.add('grid');
+  membersContainer.classList.remove('list');
+  gridBtn.classList.add('active');
+  listBtn.classList.remove('active');
 });
-btnLista.addEventListener("click", () => {
-    container.classList.add("lista");
-    btnLista.classList.add("ativo");
-    btnGrade.classList.remove("ativo");
+
+listBtn.addEventListener('click', () => {
+  membersContainer.classList.add('list');
+  membersContainer.classList.remove('grid');
+  listBtn.classList.add('active');
+  gridBtn.classList.remove('active');
 });
-document.getElementById("ano").textContent = "© " + new Date().getFullYear() + " Camara de Comercio de Sao Paulo";
+
+getMembers();
