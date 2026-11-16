@@ -1,25 +1,29 @@
+/* SEM @import - Fonte vem pelo <link> no HTML */
+
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+    background: #f2f2f2;
+    color: #222;
 }
 
 header {
+    background: #0b3d91;
+    color: white;
     display: flex;
     align-items: center;
     gap: 1rem;
     padding: 1rem;
-    background: #0f2a44;
-    color: white;
 }
 
-header img {
-    border-radius: 8px;
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
 }
 
 #menu {
@@ -31,26 +35,27 @@ header img {
     cursor: pointer;
 }
 
-#navegacao {
+nav {
     display: none;
     flex-direction: column;
-    background: #1a3a5a;
+    background: #123a6d;
 }
 
-#navegacao.open {
+nav.open {
     display: flex;
 }
 
-#navegacao a {
+nav a {
     color: white;
     text-decoration: none;
-    padding: 0.8rem 1rem;
+    padding: 0.8rem;
+    text-align: center;
 }
 
-#navegacao a.active {
-    background: #eab308;
+nav a.active {
+    background: #ffcc00;
     color: #000;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 main {
@@ -60,24 +65,29 @@ main {
 }
 
 main h2 {
-    margin-bottom: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #0b3d91;
+    margin-bottom: 1rem;
 }
 
 .view-buttons {
-    text-align: center;
-    margin: 1rem 0;
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .view-buttons button {
-    padding: 0.6rem 1.2rem;
-    cursor: pointer;
-    border: 1px solid #0f2a44;
+    padding: 0.6rem 1rem;
+    border: 2px solid #0b3d91;
     background: white;
-    border-radius: 6px;
+    color: #0b3d91;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
 }
 
 .view-buttons button.active {
-    background: #0f2a44;
+    background: #0b3d91;
     color: white;
 }
 
@@ -87,48 +97,37 @@ main h2 {
     gap: 1rem;
 }
 
-.member-card {
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 1rem;
-    text-align: center;
-    background: #fff;
-}
-
-.member-card img {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    border-radius: 8px;
-}
-
-.member-card h3 {
-    margin: 0.5rem 0;
-}
-
-.member-card a {
-    color: #0f2a44;
-    font-weight: bold;
-}
-
 #members.list {
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
 }
 
-#members.list .member-card {
-    display: block;
-    text-align: left;
+
+.member-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-#members.list .member-card img {
-    display: none;
+.member-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.member-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #0b3d91;
+    margin: 0.5rem 0;
 }
 
 footer {
-    background: #0f2a44;
+    background: #0b3d91;
     color: white;
     text-align: center;
-    padding: 1.5rem 1rem;
+    padding: 1rem;
     margin-top: 2rem;
 }
