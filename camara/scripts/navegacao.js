@@ -10,6 +10,5 @@ if (menuBtn) {
         menuBtn.textContent = menuBtn.classList.contains('open') ? '✕' : '☰';
     });
 }
-
 if (yearSpan) yearSpan.textContent = new Date().getFullYear();
 if (lastMod) lastMod.textContent = `Última modificação: ${document.lastModified}`;

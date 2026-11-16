@@ -29,3 +29,8 @@
         align-items: center;
     }
 }
+
+/* CORREÇÃO CONTRASTE NAV */
+nav#navegacao a {
+    color: white;
+}

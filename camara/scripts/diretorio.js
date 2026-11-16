@@ -11,6 +11,7 @@ async function getMembers() {
     console.error('Erro ao carregar membros:', error);
     membersContainer.innerHTML = '<p>Não foi possível carregar os membros.</p>';
   }
+
 }
 
 function displayMembers(members) {
