@@ -11,6 +11,5 @@ if (menuBtn) {
     });
 }
 
-
 if (yearSpan) yearSpan.textContent = new Date().getFullYear();
 if (lastMod) lastMod.textContent = `Última modificação: ${document.lastModified}`;
