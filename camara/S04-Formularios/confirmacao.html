@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+
+<body>
+    <h1>Confirmação de Cadastro</h1>
+    <p>Obrigado por se cadastrar!</p>
+
+    <div id="resultado" class="confirmacao"></div>
+
+    <br>
+    <a href="index.html" class="botao-voltar">Voltar ao formulário</a>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+
+        const nome = params.get('nome');
+        const email = params.get('email');
+        const nascimento = params.get('nascimento');
+        const origem = params.get('origem');
+        const nivel = params.get('nivel');
+        const mensagem = params.get('mensagem');
+        const interesses = params.getAll('interesse');
+
+        let html = '';
+        if (params.has('nome')) {
+            html += `<p><strong>Nome:</strong> ${nome}</p>`;
+            html += `<p><strong>E-mail:</strong> ${email}</p>`;
+            html += `<p><strong>Nascimento:</strong> ${nascimento}</p>`;
+            html += `<p><strong>Origem:</strong> ${origem}</p>`;
+            html += `<p><strong>Nível:</strong> ${nivel}</p>`;
+            html += `<p><strong>Interesses:</strong> ${interesses.join(', ') || 'Nenhum'}</p>`;
+            html += `<p><strong>Mensagem:</strong> ${mensagem}</p>`;
+            html += `<hr><p><small>URL: ${window.location.href}</small></p>`;
+        } else {
+            html = '<p>Nenhum dado recebido.</p>';
+        }
+        document.getElementById('resultado').innerHTML = html;
+    </script>
+</body>
+
+</html>
