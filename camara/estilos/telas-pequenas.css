@@ -37,6 +37,7 @@ header {
 nav {
     display: none;
     background: #222;
+    color: #fff;
 }
 
 nav.aberto {
@@ -111,7 +112,7 @@ main {
 }
 
 #membros.lista img {
-    display: none !important;
+    display: none;
 }
 
 footer {

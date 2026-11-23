@@ -12,7 +12,7 @@
         display: inline-block;
     }
 
-    /* ===== DIRETÓRIO - AQUÍ SÍ FUNCIONA ===== */
+    /* ===== DIRETÓRIO ===== */
     #membros {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -127,29 +127,6 @@
         height: auto;
         min-height: 180px;
     }
-}
-
-/* Botões Grade / Lista - fuera del @media para que funcione en móvil también */
-.botoes {
-    display: flex;
-    justify-content: center;
-    gap: 0.8rem;
-    margin: 1rem 0;
-}
-
-.botoes button {
-    padding: 0.6rem 1.2rem;
-    border: 2px solid #0b5ed7;
-    background: #fff;
-    color: #0b5ed7;
-    border-radius: 8px;
-    font-weight: 700;
-    cursor: pointer;
-}
-
-.botoes button.ativo {
-    background: #0b5ed7;
-    color: #fff;
 }
 
 .subtitulo {

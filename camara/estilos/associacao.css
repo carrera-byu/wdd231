@@ -39,16 +39,19 @@ dialog button:focus-visible {
     outline-offset: 2px;
 }
 
-.join-layout input[type="submit"] {
+.join-layout button[type="submit"] {
     background: #0b3d5c;
-    color: white;
+    color: #fff;
     font-weight: 700;
     cursor: pointer;
     border: none;
     margin-top: .5rem;
+    padding: .8rem;
+    border-radius: 6px;
+    font-size: 1rem;
 }
 
-.join-layout input[type="submit"]:hover {
+.join-layout button[type="submit"]:hover {
     background: #145a8a;
 }
 
@@ -62,7 +65,7 @@ dialog button:focus-visible {
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 2px 8px rgba(0, 0, 0, .15);
-    background: white;
+    background: #fff;
     animation: cardIn 1s ease both;
 }
 

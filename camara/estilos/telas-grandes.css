@@ -15,7 +15,7 @@
     }
 
     /* QUITA EL BOTON HAMBURGUESA EN COMPUTADORA */
-    #menu-btn {
+    #menu {
         display: none;
     }
 
@@ -34,15 +34,7 @@
         padding: 8px 16px;
     }
 
-    /* TARJETAS - 3 EN FILA */
-    #membros {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    #membros.lista {
-        grid-template-columns: 1fr;
-    }
-
+    /* Vista lista */
     #membros.lista .card {
         flex-direction: row;
         align-items: center;
