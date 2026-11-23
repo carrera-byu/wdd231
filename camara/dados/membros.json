@@ -55,12 +55,12 @@
             "nivel": 1
         },
         {
-            "nome": "Ótica Visão",
-            "descricao": "Óculos e lentes",
+            "nome": "Pet Shop Mundo Animal",
+            "descricao": "Banho, tosa e ração",
             "endereco": "Rua G, 700 - São Paulo",
             "telefone": "(11) 7777-7777",
             "website": "https://example.com",
-            "imagem": "imagens/pet.jpg.jpg",
+            "imagem": "imagens/pet.jpg",
             "nivel": 2
         }
     ]

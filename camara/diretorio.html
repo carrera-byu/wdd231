@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diretório de Membros | Câmara de Comércio de São Paulo</title>
+    <title>Diretório - Câmara de Comércio</title>
     <meta name="description"
         content="Diretório de membros da Câmara de Comércio de São Paulo. Conheça empresas locais, serviços e parceiros.">
     <meta name="author" content="Victor Carrera">
@@ -12,10 +12,17 @@
     <meta property="og:description" content="Diretório de membros da Câmara de Comércio de São Paulo.">
     <meta property="og:image" content="https://carrera-byu.github.io/wdd231/camara/imagens/logo.png">
     <meta property="og:url" content="https://carrera-byu.github.io/wdd231/camara/diretorio.html">
-    <link rel="icon" href="imagens/favicon.ico">
-    <link rel="stylesheet" href="estilos/normalize.css">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="imagens/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="estilos/telas-pequenas.css">
     <link rel="stylesheet" href="estilos/telas-maiores.css">
+    <link rel="stylesheet" href="estilos/telas-grandes.css">
+    <script src="scripts/navegacao.js" defer></script>
     <script src="scripts/diretorio.js" defer></script>
 </head>
 
@@ -25,23 +32,32 @@
         <span>Câmara de Comércio<br>São Paulo</span>
         <button id="menu" aria-label="Abrir menu">☰</button>
     </header>
-    <nav>
-        <a href="index.html">Home</a>
+    <nav id="navegacao">
+        <a href="index.html">Início</a>
+        <a href="descobrir.html">Descobrir</a>
         <a href="diretorio.html" class="ativo">Diretório</a>
-        <a href="junte-se.html">Junte-se</a>
-        <a href="descubra.html">Descubra</a>
+        <a href="associacao.html">Junte-se</a>
     </nav>
     <main>
         <h1>Diretório de Membros</h1>
+        <p class="subtitulo">Conheça as empresas membros da nossa comunidade. Use Grade para ver em cartões ou Lista
+            para ver em linhas.</p>
         <div class="botoes">
             <button id="grade" class="ativo">⏹️ Grade</button>
             <button id="lista">📄 Lista</button>
         </div>
-        <section id="membros" class="grade"></section>
+        <section id="membros" class="grade" aria-live="polite"></section>
     </main>
     <footer>
-        <p><span id="ano"></span> Câmara de Comércio de São Paulo</p>
-        <p id="ultimaModificacao"></p>
+        <div>
+            <p><strong>Câmara de Comércio de São Paulo</strong></p>
+            <p>Av. Paulista, 1000 - São Paulo, SP</p>
+            <p>contato@camarasp.org.br | (11) 9999-9999</p>
+        </div>
+        <div>
+            <p><span id="ano"></span> | Victor Carrera | WDD 231</p>
+            <p id="ultimaModificacao"></p>
+        </div>
     </footer>
 </body>
 

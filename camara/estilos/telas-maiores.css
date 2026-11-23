@@ -12,7 +12,156 @@
         display: inline-block;
     }
 
+    /* ===== DIRETÓRIO - AQUÍ SÍ FUNCIONA ===== */
+    #membros {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        padding: 1rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
     #membros.grade {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    #membros.lista {
+        grid-template-columns: 1fr;
+    }
+
+    .member-card {
+        background: #fff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .member-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+    }
+
+    /* TODAS LAS IMÁGENES DEL MISMO TAMAÑO */
+    .member-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .member-info {
+        padding: 1rem 1.2rem 1.3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+        flex: 1;
+    }
+
+    .member-info h3 {
+        font-size: 1.25rem;
+        margin: 0;
+        color: #1a1a1a;
+    }
+
+    .member-info .descricao {
+        color: #555;
+        font-size: 0.95rem;
+    }
+
+    .member-info .endereco,
+    .member-info .telefone {
+        font-size: 0.9rem;
+        color: #666;
+        margin: 0;
+    }
+
+    .nivel {
+        display: inline-block;
+        align-self: flex-start;
+        padding: 0.25rem 0.7rem;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .nivel-ouro {
+        background: #ffd700;
+        color: #5a4500;
+    }
+
+    .nivel-prata {
+        background: #e0e0e0;
+        color: #333;
+    }
+
+    .nivel-bronze {
+        background: #e8a87c;
+        color: #4a2400;
+    }
+
+    .btn-site {
+        display: inline-block;
+        margin-top: auto;
+        padding-top: 0.5rem;
+        color: #0b5ed7;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    .btn-site:hover {
+        text-decoration: underline;
+    }
+
+    /* Vista lista - imagen a la izquierda pareja */
+    #membros.lista .member-card {
+        flex-direction: row;
+    }
+
+    #membros.lista .member-card img {
+        width: 220px;
+        height: auto;
+        min-height: 180px;
+    }
+}
+
+/* Botões Grade / Lista - fuera del @media para que funcione en móvil también */
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    margin: 1rem 0;
+}
+
+.botoes button {
+    padding: 0.6rem 1.2rem;
+    border: 2px solid #0b5ed7;
+    background: #fff;
+    color: #0b5ed7;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.botoes button.ativo {
+    background: #0b5ed7;
+    color: #fff;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Pet Shop - que se vea el perro COMPLETO dentro del cuadro */
+.member-card img[src*="pet"] {
+    object-fit: contain;
+    object-position: center;
+    background: #fbc6d1;
 }

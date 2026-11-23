@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Associe-se - Câmara de Comércio</title>
+    <meta name="description"
+        content="Associe-se à Câmara de Comércio de São Paulo. Preencha o formulário e escolha seu nível de associação.">
+    <meta name="author" content="Carrera">
+    <meta property="og:title" content="Associe-se | Câmara de Comércio">
+    <meta property="og:description" content="Associe-se à Câmara de Comércio de São Paulo.">
+    <meta property="og:image" content="https://carrera-byu.github.io/wdd231/camara/imagens/logo.png">
+    <meta property="og:url" content="https://carrera-byu.github.io/wdd231/camara/associacao.html">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="imagens/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="estilos/telas-pequenas.css">
+    <link rel="stylesheet" href="estilos/telas-maiores.css">
+    <link rel="stylesheet" href="estilos/telas-grandes.css">
+    <link rel="stylesheet" href="estilos/associacao.css">
+    <script src="scripts/navegacao.js" defer></script>
+    <script src="scripts/associacao.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="imagens/logo.png" alt="Logo Câmara de Comércio" width="60" height="60">
+        <div>
+            <p class="site-title">Câmara de Comércio</p>
+            <p>Associe-se</p>
+        </div>
+        <button id="menu" aria-label="Abrir menu">☰</button>
+    </header>
+    <nav id="navegacao">
+        <a href="index.html">Início</a>
+        <a href="descobrir.html">Descobrir</a>
+        <a href="diretorio.html">Diretório</a>
+        <a href="associacao.html" class="active">Junte-se</a>
+    </nav>
+    <main>
+        <h1>Associe-se à Câmara</h1>
+        <div class="join-layout">
+            <form method="get" action="agradecimento.html">
+                <label for="first-name">Nome*</label>
+                <input type="text" id="first-name" name="first-name" title="Digite seu nome" autocomplete="given-name"
+                    required>
+
+                <label for="last-name">Sobrenome*</label>
+                <input type="text" id="last-name" name="last-name" title="Digite seu sobrenome"
+                    autocomplete="family-name" required>
+
+                <label for="title">Cargo na Organização</label>
+                <input type="text" id="title" name="title"
+                    title="Seu cargo, mínimo 7 caracteres, só letras, hífen e espaço" autocomplete="organization-title"
+                    pattern="[A-Za-zÀ-ÿ\- ]{7,}">
+
+                <label for="email">E-mail*</label>
+                <input type="email" id="email" name="email" title="Digite seu e-mail" autocomplete="email"
+                    placeholder="exemplo@email.com" required>
+
+                <label for="phone">Celular*</label>
+                <input type="tel" id="phone" name="phone" title="Digite seu celular" autocomplete="tel" required>
+
+                <label for="organization">Nome da Empresa / Organização*</label>
+                <input type="text" id="organization" name="organization" title="Nome da sua empresa"
+                    autocomplete="organization" required>
+
+                <label for="membership">Nível de Associação</label>
+                <select id="membership" name="membership" required>
+                    <option value="">Selecione...</option>
+                    <option value="np">Associação NP</option>
+                    <option value="bronze">Associação Bronze</option>
+                    <option value="silver">Associação Prata</option>
+                    <option value="gold">Associação Ouro</option>
+                </select>
+
+                <label for="description">Descrição da Atividade / Organização</label>
+                <textarea id="description" name="description" title="Descreva sua empresa ou atividade"></textarea>
+
+                <input type="hidden" name="timestamp" id="timestamp">
+                <input type="submit" value="Enviar Pedido de Associação">
+            </form>
+
+            <aside class="cards">
+                <div class="card np-card">
+                    <h3>Associação NP</h3>
+                    <p>Para organizações sem fins lucrativos</p>
+                    <p><strong>Grátis</strong></p>
+                    <button type="button" data-modal="modal-np">Mais Informações</button>
+                </div>
+                <div class="card bronze-card">
+                    <h3>Associação Bronze</h3>
+                    <p>Ideal para começar</p>
+                    <p><strong>R$ 100 / ano</strong></p>
+                    <button type="button" data-modal="modal-bronze">Mais Informações</button>
+                </div>
+                <div class="card silver-card">
+                    <h3>Associação Prata</h3>
+                    <p>Mais visibilidade</p>
+                    <p><strong>R$ 250 / ano</strong></p>
+                    <button type="button" data-modal="modal-silver">Mais Informações</button>
+                </div>
+                <div class="card gold-card">
+                    <h3>Associação Ouro</h3>
+                    <p>Máximo benefício</p>
+                    <p><strong>R$ 500 / ano</strong></p>
+                    <button type="button" data-modal="modal-gold">Mais Informações</button>
+                </div>
+            </aside>
+        </div>
+
+        <dialog id="modal-np">
+            <h3>NP - Benefícios</h3>
+            <ul>
+                <li>Acesso a eventos</li>
+                <li>Networking</li>
+                <li>Sem taxa</li>
+            </ul>
+            <button type="button" class="close">Fechar ✕</button>
+        </dialog>
+        <dialog id="modal-bronze">
+            <h3>Bronze - Benefícios</h3>
+            <ul>
+                <li>Tudo do NP</li>
+                <li>Treinamentos</li>
+                <li>Desconto 10% em eventos</li>
+            </ul>
+            <button type="button" class="close">Fechar ✕</button>
+        </dialog>
+        <dialog id="modal-silver">
+            <h3>Prata - Benefícios</h3>
+            <ul>
+                <li>Tudo do Bronze</li>
+                <li>Publicidade na página inicial</li>
+                <li>Desconto 20% em eventos</li>
+            </ul>
+            <button type="button" class="close">Fechar ✕</button>
+        </dialog>
+        <dialog id="modal-gold">
+            <h3>Ouro - Benefícios</h3>
+            <ul>
+                <li>Tudo do Prata</li>
+                <li>Destaque na página inicial</li>
+                <li>Eventos especiais VIP</li>
+                <li>Desconto 30% em eventos</li>
+            </ul>
+            <button type="button" class="close">Fechar ✕</button>
+        </dialog>
+    </main>
+    <footer>
+        <p>Câmara de Comércio</p>
+        <p>&copy; <span id="year"></span> | Victor Carrera | WDD 231</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
