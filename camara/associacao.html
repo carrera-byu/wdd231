@@ -57,8 +57,8 @@
 
                 <label for="title">Cargo na Organização</label>
                 <input type="text" id="title" name="title"
-                    title="Seu cargo, mínimo 7 caracteres, só letras, hífen e espaço"
-                    autocomplete="cargo-na-organizacao" pattern="[A-Za-zÀ-ÿ\- ]{7,}">
+                    title="Seu cargo, mínimo 7 caracteres, só letras, hífen e espaço" autocomplete="organization-title"
+                    pattern="[A-Za-zÀ-ÿ\- ]{7,}">
 
                 <label for="email">E-mail*</label>
                 <input type="email" id="email" name="email" title="Digite seu e-mail" autocomplete="email"
@@ -69,7 +69,7 @@
 
                 <label for="organization">Nome da Empresa / Organização*</label>
                 <input type="text" id="organization" name="organization" title="Nome da sua empresa"
-                    autocomplete="organizacao" required>
+                    autocomplete="organization" required>
 
                 <label for="membership">Nível de Associação</label>
                 <select id="membership" name="membership" required>
@@ -89,25 +89,25 @@
 
             <aside class="cards">
                 <div class="card np-card">
-                    <h3>Associação NP</h3>
+                    <h2>Associação NP</h2>
                     <p>Para organizações sem fins lucrativos</p>
                     <p><strong>Grátis</strong></p>
                     <button type="button" data-modal="modal-np">Mais Informações</button>
                 </div>
                 <div class="card bronze-card">
-                    <h3>Associação Bronze</h3>
+                    <h2>Associação Bronze</h2>
                     <p>Ideal para começar</p>
                     <p><strong>R$ 100 / ano</strong></p>
                     <button type="button" data-modal="modal-bronze">Mais Informações</button>
                 </div>
                 <div class="card silver-card">
-                    <h3>Associação Prata</h3>
+                    <h2>Associação Prata</h2>
                     <p>Mais visibilidade</p>
                     <p><strong>R$ 250 / ano</strong></p>
                     <button type="button" data-modal="modal-silver">Mais Informações</button>
                 </div>
                 <div class="card gold-card">
-                    <h3>Associação Ouro</h3>
+                    <h2>Associação Ouro</h2>
                     <p>Máximo benefício</p>
                     <p><strong>R$ 500 / ano</strong></p>
                     <button type="button" data-modal="modal-gold">Mais Informações</button>
