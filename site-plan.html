@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planejamento do Site - Opina+</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --azul: #0B2C4A;
+            --azul-claro: #164E7A;
+            --laranja: #FF7A00;
+            --fundo: #FFFFFF;
+            --cinza: #F2F4F7;
+            --texto: #1A1A1A;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            background: var(--cinza);
+            color: var(--texto);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: var(--azul);
+            color: #fff;
+            padding: 2rem 1.5rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            font-size: 2.4rem;
+        }
+
+        header h1 span {
+            color: var(--laranja)
+        }
+
+        header p {
+            margin: .5rem 0 0
+        }
+
+        header .dominio {
+            display: inline-block;
+            margin-top: 1rem;
+            background: var(--laranja);
+            color: #fff;
+            padding: .3rem .8rem;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: .85rem;
+        }
+
+        main {
+            max-width: 900px;
+            margin: auto;
+            padding: 1.5rem
+        }
+
+        section {
+            background: var(--fundo);
+            border-left: 6px solid var(--laranja);
+            padding: 1.2rem 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, .06);
+        }
+
+        h2 {
+            font-family: 'Poppins', sans-serif;
+            color: var(--azul);
+            margin-top: 0;
+        }
+
+        h3 {
+            color: var(--azul)
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--laranja);
+            color: #fff;
+            padding: .6rem 1.2rem;
+            border-radius: 8px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .cores {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap
+        }
+
+        .cor {
+            flex: 1;
+            min-width: 160px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden
+        }
+
+        .cor div {
+            height: 70px
+        }
+
+        .cor p {
+            padding: .5rem .8rem;
+            margin: 0;
+            font-size: .9rem
+        }
+
+        .font-titulo {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--azul)
+        }
+
+        .font-corpo {
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem
+        }
+
+        /* WIREFRAME - preto e branco */
+        .wireframes {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem
+        }
+
+        @media(max-width:650px) {
+            .wireframes {
+                grid-template-columns: 1fr
+            }
+        }
+
+        .wireframe {
+            border: 2px solid #000;
+            padding: .8rem;
+            background: #fff
+        }
+
+        .wf-box {
+            border: 1.5px solid #000;
+            text-align: center;
+            padding: .7rem .3rem;
+            margin-bottom: .6rem;
+            font-size: .8rem;
+            text-transform: uppercase
+        }
+
+        .wf-hero {
+            height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+
+        .wf-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: .4rem
+        }
+
+        .wf-cards div {
+            border: 1.5px solid #000;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: .7rem;
+            text-align: center
+        }
+
+        .wf-small .wf-cards {
+            grid-template-columns: 1fr
+        }
+
+        footer {
+            background: var(--azul);
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            font-size: .9rem
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Opina<span>+</span></h1>
+        <p>Empresa de Marketing e Pesquisas de Opinião</p>
+        <p><span class="dominio">Domínio sugerido: opinamais.com.br</span></p>
+    </header>
+
+    <main>
+
+        <!-- 1. NOME -->
+        <section>
+            <h2>1. Nome do Site</h2>
+            <p><strong>Opina+</strong></p>
+            <p>Escolhi Opina+ porque o nome é curto, fácil de lembrar e deixa claro o objetivo do site: dar opinião e
+                somar. O "+" representa o valor a mais que a opinião do usuário traz para as marcas. Funciona bem como
+                marca, logotipo e domínio, e pode ser usado tanto para usuários que respondem pesquisas quanto para
+                empresas que contratam o serviço.</p>
+            <p><strong>Domínio:</strong> opinamais.com.br - disponível para representar o projeto, não é obrigatório
+                comprar.</p>
+        </section>
+
+        <!-- 2. FINALIDADE -->
+        <section>
+            <h2>2. Finalidade do Site</h2>
+            <p>O site Opina+ tem como finalidade conectar dois lados:</p>
+            <ul>
+                <li><strong>Usuários:</strong> responder enquetes e pesquisas de opinião de forma fácil e rápida.</li>
+                <li><strong>Empresas / Marcas:</strong> entender melhor o que seus clientes realmente pensam para
+                    melhorar produtos e serviços.</li>
+            </ul>
+            <p>O site terá 3 páginas principais:</p>
+            <ul>
+                <li><strong>1. Início - index.html:</strong> Apresentação da empresa, como funciona, pesquisas em
+                    destaque.</li>
+                <li><strong>2. Pesquisas - pesquisas.html:</strong> Lista de 05 pesquisas com filtros por categoria.
+                </li>
+                <li><strong>3. Participe - participe.html:</strong> Cadastro para responder pesquisas + Contato para
+                    empresas.</li>
+                <li><strong>Extra - agradecimento.html:</strong> Página que mostra os dados enviados no formulário.</li>
+            </ul>
+        </section>
+
+        <!-- 3. CENÁRIOS -->
+        <section>
+            <h2>3. Cenários - Público-Alvo</h2>
+            <p><strong>Cenário 1 - Usuário que quer opinar - Victor, 23 anos:</strong></p>
+            <ul>
+                <li>"Onde posso dar minha opinião sobre produtos e ser ouvido?"</li>
+                <li>"Quais pesquisas estão disponíveis agora e quanto tempo leva para responder?"</li>
+            </ul>
+            <p><strong>Cenário 2 - Empresa que quer entender o cliente - Maria, gerente de marketing, 35 anos:</strong>
+            </p>
+            <ul>
+                <li>"Como a Opina+ pode me ajudar a saber o que meus clientes pensam?"</li>
+                <li>"Como faço para contratar uma pesquisa ou falar com a empresa?"</li>
+            </ul>
+            <p><strong>Cenário 3 - Visitante no celular:</strong></p>
+            <ul>
+                <li>"Consigo responder uma pesquisa pelo celular, com filtros fáceis e em poucos cliques?"</li>
+            </ul>
+        </section>
+
+        <!-- 4. CORES -->
+        <section>
+            <h2>4. Esquema de Cores</h2>
+            <p>Paleta definida na Semana 4: cores suaves, profissionais e amigáveis. Azul escuro para confiança, laranja
+                para ação e destaque.</p>
+            <div class="cores">
+                <div class="cor">
+                    <div style="background:#0B2C4A"></div>
+                    <p><strong>#0B2C4A - Azul Escuro</strong><br>Usado em: títulos, header, footer, menu</p>
+                </div>
+                <div class="cor">
+                    <div style="background:#FF7A00"></div>
+                    <p><strong>#FF7A00 - Laranja</strong><br>Usado em: botões, links em destaque, acentos, bordas</p>
+                </div>
+                <div class="cor">
+                    <div style="background:#FFFFFF"></div>
+                    <p><strong>#FFFFFF - Branco</strong><br>Usado em: fundo dos cards e conteúdo principal</p>
+                </div>
+                <div class="cor">
+                    <div style="background:#1A1A1A"></div>
+                    <p><strong>#1A1A1A - Preto Suave</strong><br>Usado em: parágrafos / texto do corpo</p>
+                </div>
+            </div>
+            <p style="margin-top:1rem"><a class="btn" href="#">Exemplo de Botão - Participe Agora</a></p>
+        </section>
+
+        <!-- 5. TIPOGRAFIA -->
+        <section>
+            <h2>5. Tipografia</h2>
+            <h3>Poppins - Títulos</h3>
+            <p class="font-titulo">Sua opinião vale muito! Opina+</p>
+            <p>Usada em: h1, h2, h3, botões e navegação. Fonte moderna, forte e legível, ideal para destacar títulos e
+                chamadas para ação.</p>
+            <h3>Inter - Corpo do Texto</h3>
+            <p class="font-corpo">Este é um exemplo de parágrafo usando Inter. O texto precisa ser fácil de ler no
+                celular e no desktop, com fontes grandes, bom espaçamento e nada apertado.</p>
+            <p>Usada em: parágrafos, listas, cards de pesquisas, formulários e rodapé.</p>
+        </section>
+
+        <!-- 6. WIREFRAME -->
+        <section>
+            <h2>6. Wireframe - Página Inicial (index.html)</h2>
+            <p>Esboço em preto e branco focado apenas em estrutura, layout e funcionalidade. Sem cores ou imagens
+                finais.</p>
+            <div class="wireframes">
+                <div>
+                    <h3>Visão Pequena - Mobile (375px)</h3>
+                    <div class="wireframe wf-small">
+                        <div class="wf-box">LOGO OPINA+ + MENU ☰</div>
+                        <div class="wf-box wf-hero">HERO - TÍTULO + BOTÃO PARTICIPE</div>
+                        <div class="wf-box">COMO FUNCIONA - 3 PASSOS</div>
+                        <div class="wf-cards">
+                            <div>CARD 1<br>Pesquisa 1</div>
+                            <div>CARD 2<br>Pesquisa 2</div>
+                            <div>CARD 3<br>Pesquisa 3</div>
+                        </div>
+                        <div class="wf-box">FORMULÁRIO RÁPIDO</div>
+                        <div class="wf-box">FOOTER</div>
+                    </div>
+                </div>
+                <div>
+                    <h3>Visão Grande - Desktop (1024px)</h3>
+                    <div class="wireframe">
+                        <div class="wf-box">LOGO | INÍCIO | PESQUISAS | PARTICIPE | BOTÃO</div>
+                        <div class="wf-box wf-hero">HERO GRANDE - TÍTULO + IMAGEM + BOTÃO</div>
+                        <div class="wf-cards">
+                            <div>CARD 1</div>
+                            <div>CARD 2</div>
+                            <div>CARD 3</div>
+                        </div>
+                        <div class="wf-box">2 COLUNAS: TEXTO + IMAGEM - PARA EMPRESAS</div>
+                        <div class="wf-box">FORMULÁRIO LADO A LADO</div>
+                        <div class="wf-box">FOOTER - 3 COLUNAS</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Opina+ | Planejamento do Site - WDD 231 | Victor José Carrera Navarro</p>
+    </footer>
+
+</body>
+
+</html>
